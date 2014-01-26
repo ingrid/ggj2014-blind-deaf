@@ -1,0 +1,25 @@
+{
+  "type": "player",
+  "entity": {
+    "color": "blue",
+    "shape": "circle",
+    "radius": 2,
+    "fixedRotation": true
+  },
+  "sprite": {
+    "anchor": {"x": 0.5, "y": 0.5},
+    "texture": "image/player.png"
+  },
+  "onmove": {
+    "type": "step",
+    "distance": 2,
+    "livefor": 2,
+    "entity": false,
+    "radius": 1,
+    "sprite": {
+      "filter": "AudioImage",
+      "anchor": {"x": 0.5, "y": 0.5},
+      "texture": "image/soundmask.png"
+    }
+  }
+}
